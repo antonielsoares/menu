@@ -55,6 +55,41 @@
             color: white;
             text-decoration: none;
         }
+        /***************************************/
+        .menu-mobile{
+            width: 33px;
+            height: 33px;
+            background-image: url(./menu-1.png);
+            background-size: cover;
+            float: right;
+        }
+        .menu-mobile > ul{
+            position: relative;
+            right: 132px;
+            top: 33px;
+            width: 166px;
+            background-color: #9e9e9e;
+            list-style-type: none;
+            
+        }
+        .menu-mobile > ul > li{
+            padding: 5px 10px;
+            text-align: right;
+            display: none;
+        }
+        
+        
+        .menu-mobile > ul > li > a{
+            color: aliceblue;
+            text-decoration: none;
+            
+        }
+
+        .menu-mobile > ul > li:hover{
+            display: block;
+            border: 1px solid white;
+        }
+        /********************************/
         .menu-desktop{
             float: right;
         }
@@ -65,7 +100,7 @@
         .menu-desktop > ul > li{
             position: relative;
             display: inline-block;
-            margin: 0 20px;
+            margin: 0 18px;
         }
         .menu-desktop > ul > li > a{
             color: white;
@@ -81,8 +116,8 @@
         /***************************************/
         .BG{
             width: 100%;
-            height: 344px;
-            background-image: url(./cinema_bg.jpg);
+            height: 544px;
+            background-image: url(./bg.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -92,12 +127,8 @@
         /*************** RESPONSIVO ************/
         @media screen and (max-width: 680px) {
                 .menu-desktop {display: none;}
-                h1{
-                    width: 100%;
-                    text-align: center;
-                }
                 .topo {text-align: center;}
-                img {margin-left: 0;}
+                img {margin-left: -20px;}
                 
             
         }
@@ -111,7 +142,7 @@
         </div>
     <header>
         <div class="container">
-            <h1>Logomarca...</h1>
+            <h1>Sua melhor Opção</h1>
                 <nav class="menu-desktop">
                     <ul>
                         <li>
@@ -122,7 +153,20 @@
                                     <li><a href="#">Roupa lavada</a></li>
                                 </ul>
                         </li>
-                         
+                        <li><a href="#">Ferramentas</a></li>
+                        <li><a href="#">Trabalhadores</a></li>
+                    </ul>
+                </nav>
+                <nav class="menu-mobile">
+                    <ul>
+                        <li>
+                            <a href="#">Homer</a>
+                             <!----   <ul class="submenu-mobile">
+                                    <li><a href="#">Casa</a></li>
+                                    <li><a href="#">Comida</a></li>
+                                    <li><a href="#">Roupa lavada</a></li>
+                                </ul>--->
+                        </li>
                         <li><a href="#">Ferramentas</a></li>
                         <li><a href="#">Trabalhadores</a></li>
                     </ul>
